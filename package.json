@@ -1,0 +1,35 @@
+{
+  "name": "dnode",
+  "description": "Dojo-style wrappers for NodeJS",
+  "version": "0.1.0",
+  "main": "main",
+  "licenses": [
+    {
+      "type": "BSD",
+      "url": "https://github.com/kitsonk/dnode/blob/master/LICENSE"
+    }
+  ],
+  "bugs": "https://github.com/kitsonk/dnode/issues",
+  "repositories": [{
+    "type": "git",
+    "url": "https://github.com/kitsonk/dnode.git"
+  }],
+  "keywords": [
+    "JavaScript",
+    "Dojo",
+    "Node",
+    "Utilities"
+  ],
+  "homepage": "https://github.com/kitsonk/dnode/",
+  "readme": "\n# dnode #\n\nDojo-style wrappers for NodeJS\n",
+  "dojoBuild": "dnode.profile.js",
+  "dependencies": {
+    "dojo": "~1.8"
+  },
+  "volo": {
+    "baseDir": "./src/",
+    "dependencies": {
+      "dojo": "github:dojo/dojo/~1.8"
+    }
+  }
+}

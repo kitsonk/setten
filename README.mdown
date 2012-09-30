@@ -1,0 +1,57 @@
+# dnode #
+
+Dojo Toolkit style utilities and wrappers for Node.
+
+This package is designed to provide Dojo-style AMD modules to make working with NodeJS more the "Dojo way".
+
+## License ##
+
+This code is licensed under the ["New" BSD License][license].
+
+## Installation ##
+
+Via **[cpm][cpm]**:
+
+```bash
+$ cpm install dnode
+```
+
+Via **[volo][volo]**:
+
+```bash
+$ volo add kitsonk/dnode
+```
+
+## Modules ##
+
+### dnode/dfs ###
+
+This is a wrapper for the NodeJS `fs` module, that takes the asynchronous calls and converts them into 
+a `dojo/promise` Promise based return.
+
+For example, you might have written code like this in "plain" NodeJS:
+
+```js
+var fs = require("fs");
+
+fs.readFile("/etc/passwd", function(err, data){
+	if(err) throw err;
+	console.log(data);
+});
+```
+
+This could now be rewritten as:
+
+```js
+require(["dnode/dfs"], function(dfs){
+	dfs.readFile("/etc/passwd").then(function(data){
+		console.log(data);
+	}, function(err){
+		throw err;
+	});
+});
+```
+
+[license]: https://github.com/kitsonk/dnode/blob/master/LICENSE
+[cpm]: https://github.org/kriszyp/cpm
+[volo]: http://volojs.org/
