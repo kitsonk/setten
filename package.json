@@ -1,18 +1,18 @@
 {
-  "name": "dnode",
+  "name": "setten",
   "description": "Dojo-style wrappers for NodeJS",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "main",
   "licenses": [
     {
       "type": "BSD",
-      "url": "https://github.com/kitsonk/dnode/blob/master/LICENSE"
+      "url": "https://github.com/kitsonk/setten/blob/master/LICENSE"
     }
   ],
-  "bugs": "https://github.com/kitsonk/dnode/issues",
+  "bugs": "https://github.com/kitsonk/setten/issues",
   "repositories": [{
     "type": "git",
-    "url": "https://github.com/kitsonk/dnode.git"
+    "url": "https://github.com/kitsonk/setten.git"
   }],
   "keywords": [
     "JavaScript",
@@ -20,9 +20,9 @@
     "Node",
     "Utilities"
   ],
-  "homepage": "https://github.com/kitsonk/dnode/",
-  "readme": "\n# dnode #\n\nDojo-style wrappers for NodeJS\n",
-  "dojoBuild": "dnode.profile.js",
+  "homepage": "https://github.com/kitsonk/setten/",
+  "readme": "\n# setten #\n\nDojo-style wrappers for NodeJS\n",
+  "dojoBuild": "setten.profile.js",
   "dependencies": {
     "dojo": "~1.8"
   },

@@ -1,14 +1,14 @@
 var profile = (function(){
-	var testResourceRe = /^dnode\/tests\//,
+	var testResourceRe = /^setten\/tests\//,
 
 		copyOnly = function(filename, mid){
 			var list = {
-				"dnode/dnode.profile":1,
-				"dnode/package.json":1,
-				"dnode/tests":1,
+				"setten/setten.profile":1,
+				"setten/package.json":1,
+				"setten/tests":1,
 			};
 			return (mid in list) ||
-				(/^dnode\/resources\//.test(mid) && !/\.css$/.test(filename)) ||
+				(/^setten\/resources\//.test(mid) && !/\.css$/.test(filename)) ||
 				/(png|jpg|jpeg|gif|tiff)$/.test(filename);
 		};
 

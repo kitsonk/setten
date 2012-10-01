@@ -1,4 +1,4 @@
-# dnode #
+# setten #
 
 Dojo Toolkit style utilities and wrappers for Node.
 
@@ -13,18 +13,18 @@ This code is licensed under the ["New" BSD License][license].
 Via **[cpm][cpm]**:
 
 ```bash
-$ cpm install dnode
+$ cpm install setten
 ```
 
 Via **[volo][volo]**:
 
 ```bash
-$ volo add kitsonk/dnode
+$ volo add kitsonk/setten
 ```
 
 ## Modules ##
 
-### dnode/dfs ###
+### setten/dfs ###
 
 This is a wrapper for the NodeJS `fs` module, that takes the asynchronous calls and converts them into 
 a `dojo/promise` Promise based return.
@@ -43,7 +43,7 @@ fs.readFile("/etc/passwd", function(err, data){
 This could now be rewritten as:
 
 ```js
-require(["dnode/dfs"], function(dfs){
+require(["setten/dfs"], function(dfs){
 	dfs.readFile("/etc/passwd").then(function(data){
 		console.log(data);
 	}, function(err){
@@ -52,6 +52,6 @@ require(["dnode/dfs"], function(dfs){
 });
 ```
 
-[license]: https://github.com/kitsonk/dnode/blob/master/LICENSE
+[license]: https://github.com/kitsonk/setten/blob/master/LICENSE
 [cpm]: https://github.org/kriszyp/cpm
 [volo]: http://volojs.org/
