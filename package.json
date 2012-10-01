@@ -26,7 +26,7 @@
   "dependencies": {
     "dojo": "~1.8"
   },
-  "icon": "https://raw.github.com/kitsonk/setten/master/resrouces/setten_icon.png",
+  "icon": "https://raw.github.com/kitsonk/setten/master/resources/setten_icon.png",
   "volo": {
     "baseDir": "./src/",
     "dependencies": {
