@@ -1,7 +1,7 @@
 {
   "name": "setten",
   "description": "Dojo-style wrappers for NodeJS",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "main",
   "licenses": [
     {
