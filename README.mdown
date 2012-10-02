@@ -22,6 +22,26 @@ Via **[volo][volo]**:
 $ volo add kitsonk/setten
 ```
 
+## Tests ##
+
+The unit tests included with the package leverage the [Dojo Objective Harness][doh] (D.O.H.).  In order to leverage
+D.O.H. it is assumed that the `dojo` package and the `util` directory of Dojo which contains the `doh` package are 
+installed as siblings of the `setten` package, for example:
+
+```
+lib/dojo
+lib/setten
+lib/util/doh
+```
+
+This can be changed by modifying the `setten/tests/index.js` package map.
+
+The execute the tests, execute the following command from the `/setten` directory:
+
+```bash
+$ node tests
+```
+
 ## Modules ##
 
 ### setten/dfs ###
@@ -55,3 +75,4 @@ require(["setten/dfs"], function(dfs){
 [license]: https://github.com/kitsonk/setten/blob/master/LICENSE
 [cpm]: https://github.org/kriszyp/cpm
 [volo]: http://volojs.org/
+[doh]: http://dojotoolkit.org/reference-guide/1.8/util/doh.html
