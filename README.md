@@ -115,4 +115,4 @@ fufills with the single argument it was passed.
 [cpm]: https://github.org/kriszyp/cpm
 [volo]: http://volojs.org/
 [doh]: http://dojotoolkit.org/reference-guide/1.8/util/doh.html
-[fs-extra]: https://github.com/jprichardson/node-fs-extra
+[fsextra]: https://github.com/jprichardson/node-fs-extra
