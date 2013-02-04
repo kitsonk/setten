@@ -16,9 +16,9 @@ define([
 		// returns: dojo/promise/Promise
 
 		self = self || this;
-		var dfd = new Deferred();
 		return noError ? function () {
-			var args = Array.prototype.slice.call(arguments);
+			var dfd = new Deferred(),
+				args = Array.prototype.slice.call(arguments);
 			args.push(function () {
 				var a = Array.prototype.slice.call(arguments);
 				dfd.resolve(a.length > 1 ? a : a.length ? a[0] : null);
@@ -26,7 +26,8 @@ define([
 			fn.apply(self, args);
 			return dfd.promise;
 		} : function () {
-			var args = Array.prototype.slice.call(arguments);
+			var dfd = new Deferred(),
+				args = Array.prototype.slice.call(arguments);
 			args.push(function () {
 				var a = Array.prototype.slice.call(arguments),
 					err = a.shift();
