@@ -74,12 +74,12 @@ require(["setten/dfs"], function(dfs){
 
 ### setten/dfs-extra ###
 
-This is a wrapper for the [fs-extra][fsextra] module.  This takes the extra functions provides by this libarary and
+This is a wrapper for the [fs-extra][fsextra] module.  This takes the extra functions provides by this library and
 provides a `dojo/promise` based return.
 
 ### setten/util ###
 
-This is a utility library used internerally within the package.  It provides a convience function that converts
+This is a utility library used internally within the package.  It provides a convenience function that converts
 callback functions into a `dojo/promise` Promise return.  It would work like this:
 
 ```js
